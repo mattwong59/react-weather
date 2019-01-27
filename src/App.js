@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Titles from './components/titles.js'
-import Form from './components/form.js'
-import Weather from './components/weather.js'
+import Titles from './components/titles.js';
+import Form from './components/form.js';
+import Weather from './components/weather.js';
+
 
 
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
@@ -24,8 +25,8 @@ class App extends Component {
     const country = e.target.elements.country.value;
     const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&&appid=${API_KEY}&&units=metric`);
     const data = await api_call.json();
+    
     if(city && country) {
-      console.log(data);
       this.setState({
         temp: data.main.temp,
         city: data.name,
