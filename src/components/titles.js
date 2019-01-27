@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Titles extends Component {
-    render() {
-        return  (
-            <h1>Titles</h1>
-        );
-    }
-};
+const Titles = () => (
+    <React.Fragment>
+        <h1>Weather</h1>
+        <h3>Enter a city and country to check out the weather</h3>
+    </React.Fragment>
+)
 
 export default Titles 
