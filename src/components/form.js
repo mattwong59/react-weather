@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Form = (props) => (
-    <React.Fragment>
-        <form onSubmit={props.getWeather}> 
-            <input type="text" name="city" placeholder="City.." />
-            <input type="text" name="country" placeholder="Country.." />
-            <button type="submit">Get Weather</button>
-        </form>
-    </React.Fragment>
+    <form onSubmit={props.getWeather}> 
+        <label htmlFor='city'>City</label>
+        <input type="text" name="city" />
+        <label htmlFor='country'>Country</label>
+        <input type="text" name="country" />
+        <button type="submit">Get Weather</button>
+    </form>
 )
 
 export default Form;
