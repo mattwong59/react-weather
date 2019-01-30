@@ -1,6 +1,6 @@
 .wrapper {
   height: 100vh;
-  background: orange;
+  background-image: linear-gradient(to right,#e6d922, #7926d8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,8 @@
 
 .title-container {
   height: 90vh;
-  /* background: url('') center center no-repeat; */
+  background: url('./sunset.jpeg') center center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,15 +28,38 @@
   color:rgb(29, 29, 29);
 }
 
+.container {
+  background: #f3f3f3;
+}
+
 .form-container {
   height: 90vh;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-left: 50px;
-  background: lightskyblue;
 
 }
 
-/* label {
+form {
   display: flex;
-} */
+  flex-direction: column;
+}
 
+label {
+  display: flex;
+}
+
+input[type="text"] {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid purple;
+  margin-bottom: 2em;
+}
+
+input[type="text"] {
+  outline: none;
+}
+
+button {
+  border-radius: 2px;
+  width:70%;
+}
