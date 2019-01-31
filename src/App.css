@@ -12,20 +12,21 @@
   margin: 0 auto;
 }
 
-.row {
+/* .row {
   flex-wrap: nowrap;
-}
+} */
 
 .title-container {
   height: 90vh;
   background: url('./sunset.jpeg') center center no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   text-align: center;
   color:rgb(29, 29, 29);
+  padding-top: 10em;
 }
 
 .container {
@@ -50,7 +51,8 @@ label {
 
 input[type="text"] {
   border: none;
-  background: transparent;
+  background-color: transparent;
+  padding-bottom: 2px;
   border-bottom: 2px solid purple;
   margin-bottom: 2em;
 }
@@ -58,6 +60,7 @@ input[type="text"] {
 input[type="text"] {
   outline: none;
 }
+
 
 button {
   border-radius: 2px;
